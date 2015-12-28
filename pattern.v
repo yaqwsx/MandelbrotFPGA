@@ -55,16 +55,6 @@ module pattern(red, green, blue, x_in, y_in, clk, rst);
 			12:	begin red <= 10'h0; green <= 10'h0; blue <= 10'h0; end
 			default: begin red <= 10'h0; green <= 10'h0; blue <= 10'h0; end
 		endcase
-
-		/*if (overflow) begin
-			red   <= 10'hFFF;
-			green <= 10'hFFF;
-			blue   <= 10'hFFF;
-		end else begin
-			red   <= 10'h0;
-			green <= 10'h0;
-			blue   <= 10'h0;
-		end*/
 	end
 
 endmodule
