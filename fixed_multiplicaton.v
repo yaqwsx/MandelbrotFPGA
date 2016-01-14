@@ -1,5 +1,5 @@
 module fixed_multiplication(a, b, res);
-	parameter fractional = 22;
+	parameter fractional = 10;
 	parameter integral   = 10;
 	parameter width      = fractional + integral;
 	

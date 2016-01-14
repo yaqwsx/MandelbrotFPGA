@@ -48,6 +48,6 @@ VGA_Controller	u1	(	//	Host Side
 							//	Control Signal
 							.iCLK(VGA_CTRL_CLK),
 							.iRST_N(DLY_RST)	);
-pattern			 u2	(mVGA_R, mVGA_G, mVGA_B, mVGA_X, mVGA_Y, VGA_CLK, DLY_RST);
+pattern			 u2	(mVGA_R, mVGA_G, mVGA_B, mVGA_X, mVGA_Y, VGA_CLK, DLY_RST, SW, KEY);
 
 endmodule

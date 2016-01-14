@@ -1,5 +1,5 @@
 module mandelbrot_iter(in_real, in_imag, c_real, c_imag, out_real, out_imag, size_square, iters_in, iters_out);
-	parameter width = 32;
+	parameter width = 20;
 	
 	input signed   [width - 1:0] in_real;
 	input signed   [width - 1:0] in_imag;
@@ -23,5 +23,5 @@ module mandelbrot_iter(in_real, in_imag, c_real, c_imag, out_real, out_imag, siz
 	assign out_real    = real_square - imag_square + c_real;
 	assign out_imag    = (mixed * 2) + c_imag;
 	assign size_square = real_square + imag_square;
-	assign iters_out   = size_square >= 32'h1000000 ? iters_in : iters_in + 1;
+	assign iters_out   = size_square >= 32'h1000 ? iters_in : iters_in + 1;
 endmodule

@@ -1,6 +1,6 @@
 import colorsys
 
-levels = 13
+levels = 31 
 bits = 10
 
 def v_num(num):

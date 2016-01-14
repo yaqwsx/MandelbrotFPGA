@@ -1,7 +1,7 @@
 
 module mandelbrot(clk, reset, c_real_in, c_imag_in, overflow, real_out, imag_out, iters);
-	parameter width      = 32;
-	parameter iterations = 13;
+	parameter width      = 20;
+	parameter iterations = 30;
 	
 	input                         reset;
 	input                         clk;
